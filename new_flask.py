@@ -24,7 +24,7 @@ with open('Crop Prediction\models\Selector.pkl', 'rb') as f:
     selector = pickle.load(f)
 
 # Render the HTML form
-@app.route('/')
+@app.route('/',methods=['POST'])
 def home():
     return render_template('index.html')
 
