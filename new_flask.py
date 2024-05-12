@@ -29,7 +29,7 @@ def home():
     return render_template('index.html')
 
 # Handle form submission and make predictions
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
     # Get user input from the form
     district_name = request.form.get('District_Name')
